@@ -46,15 +46,11 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="15" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="17" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="addData" max="32767" attributes="0"/>
-                              <Component id="buttonOfCalculate" min="-2" pref="97" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="LabelofData" min="-2" max="-2" attributes="0"/>
@@ -65,6 +61,11 @@
                                   <Component id="TextFieldofData" pref="85" max="32767" attributes="0"/>
                                   <Component id="TextFieldOfUncertaintyB" max="32767" attributes="0"/>
                               </Group>
+                          </Group>
+                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="addData" pref="97" max="32767" attributes="0"/>
+                              <Component id="buttonOfCalculate" alignment="0" pref="97" max="32767" attributes="0"/>
+                              <Component id="jButton1" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
@@ -96,9 +97,11 @@
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="addData" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="buttonOfCalculate" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -127,9 +130,6 @@
               <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
             </Property>
           </Properties>
-          <Events>
-            <EventHandler event="caretPositionChanged" listener="java.awt.event.InputMethodListener" parameters="java.awt.event.InputMethodEvent" handler="tableofDataCaretPositionChanged"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -142,9 +142,6 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TextFieldofData">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldofDataActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="LabelofData">
       <Properties>
@@ -180,6 +177,14 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="TextFieldOfUncertaintyB">
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="delete data"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
